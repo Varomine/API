@@ -5,7 +5,6 @@ app = FastAPI(title="MAL to AniList Converter API")
 
 ANILIST_API_URL = "https://graphql.anilist.co"
 
-# GraphQL Query สำหรับหา AniList ID จาก MAL ID
 QUERY = """
 query ($idMal: Int, $type: MediaType) {
   Media (idMal: $idMal, type: $type) {
